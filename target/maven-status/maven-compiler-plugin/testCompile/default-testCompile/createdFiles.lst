@@ -1,0 +1,4 @@
+com/wallet/WalletApiApplicationTests.class
+com/wallet/repository/UserRepositoryTest.class
+com/wallet/HelloWord.class
+com/wallet/service/UserServiceTest.class

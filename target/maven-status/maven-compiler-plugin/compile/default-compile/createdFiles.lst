@@ -1,0 +1,5 @@
+com/wallet/entity/User.class
+com/wallet/service/impl/UserServiceImpl.class
+com/wallet/WalletApiApplication.class
+com/wallet/repository/UserRepository.class
+com/wallet/service/UserService.class

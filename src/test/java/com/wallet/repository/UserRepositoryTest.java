@@ -21,6 +21,7 @@ import com.wallet.entity.User;
 public class UserRepositoryTest {
 	
 	private static final String EMAIL= "email@teste.com";
+	
 	@Autowired
 	UserRepository repository;
 	
@@ -49,13 +50,15 @@ public class UserRepositoryTest {
 		User response = repository.save(u);
 		
 		assertNotNull(response);
+		
 	}
 	
 	
 	@Test
 	public void testFindByEmail() {
-		Optional<User> response = repository.findByEmailEquals(EMAIL);
 		
+		Optional<User> response = repository.findByEmailEquals(EMAIL);
+
 		assertTrue(response.isPresent());
 		assertEquals(response.get().getEmail(), EMAIL);
 	}
